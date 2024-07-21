@@ -8,16 +8,23 @@ from model import Model
 from utils import LOG
 from openai import OpenAI
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+base_url = os.getenv('BASE_URL')
+api_key = os.getenv('API_KEY')
+
 class OpenAIModel(Model):
     def __init__(self, model: str, api_key: str):
         self.model = model
-        self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        self.client = OpenAI(base_url=base_url, api_key=api_key)
 
     def make_request(self, prompt):
         attempts = 0
         while attempts < 3:
             try:
-                if self.model == "gpt-3.5-turbo":
+                if self.model == "gpt-3.5-turbo" or self.model == "gpt-4":
                     response = self.client.chat.completions.create(
                         model=self.model,
                         messages=[

@@ -10,6 +10,21 @@
 ## finished homework
 
 - **gpt4-v handwrite analysis**
+- **ai translator**
+
+## screenshot
+
+1.0 gpt4-v handwrite analysis
+
+![handwrite_analysis](./openai_api/images/handwrite_analysis.png)
+
+2.1 ai translator cn
+
+![ai_translator_1_cn](./openai-translator/images/ai_translator_1_cn.png)
+
+2.2 ai translator korean
+
+![ai_translator_2_korean](./openai-translator/images/ai_translator_2_korean.png)
 
 ## 特性
 
