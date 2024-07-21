@@ -11,6 +11,7 @@
 
 - **gpt4-v handwrite analysis**
 - **ai translator**
+- **LangChain Chains**
 
 ## screenshot
 
@@ -25,6 +26,10 @@
 2.2 ai translator korean
 
 ![ai_translator_2_korean](./openai-translator/images/ai_translator_2_korean.png)
+
+3.1 LangChain Chains
+
+![langchain_chains.png](./langchain/jupyter/images/langchain_chains.png)
 
 ## 特性
 
